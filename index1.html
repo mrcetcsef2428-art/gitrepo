@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){ $("#box").hide(); });
+  $("#show").click(function(){ $("#box").show(); });
+  $("#fade").click(function(){ $("#box").fadeIn(); });
+  $("#slide").click(function(){ $("#box").slideDown(); });
+});
+</script>
+</head>
+<body>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="fade">FadeIn</button>
+<button id="slide">SlideDown</button>
+<div id="box" style="width:100px;height:100px;background:red;">
+Hello
+</div>
+</body>
+</html>

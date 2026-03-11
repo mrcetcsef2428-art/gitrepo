@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery execution</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+ <button onclick="$('#box').hide()">Hide</button>
+<button onclick="$('#box').show()">Show</button>
+<button onclick="$('#box').fadeIn()">Fade In</button>
+<button onclick="$('#box').slideDown()">Slide Down</button>
+<div id="box" style="width:200px;height:200px;background:red;margin-top:10px;">
+Hello
+</div>
+</body>
+</html>

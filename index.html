@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head
+    <title>jQuery Effects Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("#box").hide(1000); 
+            });
+            $("#show").click(function(){
+                $("#box").show(1000); 
+            });
+            $("#fadeIn").click(function(){
+                $("#box").fadeIn("slow"); 
+            });
+            $("#slideDown").click(function(){
+                $("#box").slideDown("fast"); 
+            });
+        });
+    </script>
+    <style>
+        #box 
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            margin-top: 20px;
+            color: white;
+            display: none;
+            padding: 20px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="fadeIn">Fade In</button>
+    <button id="slideDown">Slide Down</button>
+
+    <div id="box">
+        <p>Hello jQuery!</p>
+    </div>
+
+</body>
+</html>
